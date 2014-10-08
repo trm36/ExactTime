@@ -23,6 +23,8 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.timeapi.org/utc/now"]];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     
+    //example if stuff coming back is JSON
+    //JSON seriallizer
     [operation setCompletionBlockWithSuccess:
      ^(AFHTTPRequestOperation *operation, NSData *responseObject)
         {
